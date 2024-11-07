@@ -9,6 +9,8 @@
 
         <!-- A FAVICON -->
         <!-- TO DO: add the favicon here -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
         <!-- GOOGLE FONTS LINKS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,6 +101,11 @@
                     <p>The video that we will embed below is included in the video folder of this project. Your zyBook explains how these tags work in detail, but today we'll write some minimum code to get the video to display on our page. Below, we'll add the video from the video folder in the project. Include the attribute that will display controls for the video, and set the width.</p>
                     
                     <!-- TO DO: Add the video from the files below using HTML5 -->
+                    <video controls width="425">
+                        <source src="video/video.mp4" type="video/mp4">
+                        Your browser doesn't support this video format. 
+                    </video> 
+
 
                     <a href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/" class="credit">Video by Caleb Oquendo</a>
                 </section>
@@ -128,8 +135,7 @@
                 <p>In HTML, tables are used for tabular data. Think of data similar to a schedule or what you might find easier to read in a spreadsheet format. Tables can cause issues on smaller screens, as they aren't responsive, so consider that if you add them to a page. If they will be small enough to fit on the screen, even with their data, you should be fine.</p>
                 <table>
                     <!-- TO DO: Complete the code below to create a caption for this table -->
-                    Hours of Operation
-
+                    <caption>Hours of Operation</caption>
                     <thead>
                         <tr>
                             <th>Day</th>
@@ -149,7 +155,7 @@
 
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell that will span all columns -->
-                        <!-- Wednesday - <span class="bold">Closed</span> -->
+                        <td colspan="2">Wednesday - <span class="bold">Closed</span></td>
                     </tr>
 
                     <tr>
@@ -170,7 +176,7 @@
 
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell containing that text -->
-                        <!-- Sunday -->
+                        <td>Sunday</td>
                     </tr>
                 </table>
             </section>
@@ -183,6 +189,19 @@
 
                 <a href="#" aria-label="find us on facebook">
                     <!-- TO DO: go to the tabler icons site, search for the icon for Facebook, and copy and paste the SVG code below -->
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
                 </a>
                 
                 <a href="#" aria-label="find us on instagram">
